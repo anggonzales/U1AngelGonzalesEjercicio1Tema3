@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         Fragment FragmentoSeleccionado = null;
         Llamarvista();
-        toolbar.setTitle("Shop");
+        toolbar.setTitle("Lista");
     }
 
     void Llamarvista(){
@@ -60,17 +60,14 @@ public class MainActivity extends AppCompatActivity {
                     //FragmentTransaction transaction = fragmentManager.beginTransaction();
                     transaction.replace(R.id.frame_container, FragmentoSeleccionado);
                     transaction.commit();
-                    toolbar.setTitle("My Gifts");
+                    toolbar.setTitle("Grillas");
                     return true;
                 case R.id.navigation_cart:
                     FragmentoSeleccionado = new LoginFragmento();
                     //FragmentTransaction transaction = fragmentManager.beginTransaction();
                     transaction.replace(R.id.frame_container, FragmentoSeleccionado);
                     transaction.commit();
-                    toolbar.setTitle("Cart");
-                    return true;
-                case R.id.navigation_profile:
-                    toolbar.setTitle("Profile");
+                    toolbar.setTitle("Login");
                     return true;
             }
             return false;

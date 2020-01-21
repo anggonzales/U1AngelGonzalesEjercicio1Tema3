@@ -68,40 +68,4 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        >
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="70dp"
-            android:tag="fabderecha"
-            app:backgroundTint="#128ba9"
-            app:borderWidth="10dp"
-            app:elevation="4dp"
-            app:fabSize="normal"
-            app:rippleColor="#43e3ff"
-            />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="70dp"
-            android:tag="fabizquierda"
-            app:backgroundTint="#128ba9"
-            app:borderWidth="10dp"
-            app:elevation="4dp"
-            app:fabSize="normal"
-            app:rippleColor="#43e3ff"
-            />
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
