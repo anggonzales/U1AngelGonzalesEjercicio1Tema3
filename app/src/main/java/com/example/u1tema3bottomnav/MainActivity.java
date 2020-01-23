@@ -9,10 +9,13 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
     private ActionBar toolbar;
     Fragment FragmentoSeleccionado = null;
     FragmentManager fragmentManager =getSupportFragmentManager();
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Fragment FragmentoSeleccionado = null;
         Llamarvista();
         toolbar.setTitle("Lista");
+
     }
 
     void Llamarvista(){
@@ -56,12 +60,13 @@ public class MainActivity extends AppCompatActivity {
                     Llamarvista();
                     return true;
                 case R.id.navigation_gifts:
-                    FragmentoSeleccionado = new GridFragment();
+                    FragmentoSeleccionado = new Formulario();
                     //FragmentTransaction transaction = fragmentManager.beginTransaction();
                     transaction.replace(R.id.frame_container, FragmentoSeleccionado);
                     transaction.commit();
-                    toolbar.setTitle("Grillas");
+                    toolbar.setTitle("Formulario");
                     return true;
+
                 case R.id.navigation_cart:
                     FragmentoSeleccionado = new LoginFragmento();
                     //FragmentTransaction transaction = fragmentManager.beginTransaction();
